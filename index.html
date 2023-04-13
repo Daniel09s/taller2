@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col">
                 <h1>Registro de estudiante</h1>
-                <button type="button" class="btn btn-primary">Registrar usuario</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar usuario</button>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="modal-body">
           <form id="form">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Tipo documento</label>
+                <label for="tipoDocumento" class="form-label">Tipo documento</label>
                 <select name="tipoDocumento" id="tipoDocumento" class="form-select">
                     <option value="1">Cedula</option>
                     <option value="2">Tarjeta identidad</option>
@@ -45,44 +45,46 @@
               </div>
               
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Nombre</label>
+                <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre"></input>
               </div>
 
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Apellido</label>
+                <label for="apellido" class="form-label">Apellido</label>
                 <input type="text" class="form-control" id="apellido"></input>
               </div>
 
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Celular</label>
+                <label for="numeroCelular" class="form-label">Celular</label>
                 <input type="number" class="form-control" id="numeroCelular"></input>
               </div>
 
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Email</label>
+                <label for="email" class="form-label">Email</label>
                 <input type="mail" class="form-control" id="correo"></input>
               </div>
 
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Usuario Linkedin</label>
+                <label for="usuarioLink" class="form-label">Usuario Linkedin</label>
                 <input type="text" class="form-control" id="numeroDocumento"></input>
               </div>
 
               <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Usuario GitHub</label>
+                <label for="usuarioGit" class="form-label">Usuario GitHub</label>
                 <input type="text" class="form-control" id="numeroDocumento"></input>
               </div>
           </form>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" id="btn-guardar">guardar</button>
         </div>
       </div>
     </div>
   </div>
 
 </body>
-
+<script src="./dist/index.js" type="module"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
